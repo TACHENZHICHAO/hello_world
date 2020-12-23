@@ -1,0 +1,51 @@
+Microsoft Windows [版本 10.0.17763.1577]
+(c) 2018 Microsoft Corporation。保留所有权利。
+
+C:\Users\chenzhichao>h:
+
+H:\>cd H:\MyWork\Git\TestProject
+
+H:\MyWork\Git\TestProject>git config --global user.name "陈志超"
+
+H:\MyWork\Git\TestProject>git config --global user.email  635472245@qq.com
+
+H:\MyWork\Git\TestProject>git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    "11\346\241\243.txt"
+        deleted:    "wenjian1/\346\226\260\345\273\272\346\226\207\346\234\254\346\226\207\346\241\243.txt"
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        hhhhh.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+H:\MyWork\Git\TestProject>git add *
+
+H:\MyWork\Git\TestProject>git commit -m  "fiit aaa"
+[master c720f2f] fiit aaa
+ 3 files changed, 2 deletions(-)
+ delete mode 100644 "11\346\241\243.txt"
+ create mode 100644 hhhhh.txt
+ delete mode 100644 "wenjian1/\346\226\260\345\273\272\346\226\207\346\234\254\346\226\207\346\241\243.txt"
+
+H:\MyWork\Git\TestProject>git push -u origin master
+info: please complete authentication in your browser...
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (7/7), 548 bytes | 274.00 KiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/TACHENZHICHAO/hello_world/pull/new/master
+remote:
+To https://github.com/TACHENZHICHAO/hello_world.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+H:\MyWork\Git\TestProject>
